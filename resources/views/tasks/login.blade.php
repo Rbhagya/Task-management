@@ -8,7 +8,7 @@
     <title>Login user</title>
 </head>
 <body>
-<form action="" method="post">
+<form action="{{ route('SaveUser') }}" method="POST">
 @csrf
 <div class="mb-3">
 <label for="name" name="name">Name</label>
@@ -20,7 +20,7 @@
 </div>
 
 <div class="mb-3">
-<input type="button" name="submit">
+<button type="submit">Create</button>
 </div>
 
 

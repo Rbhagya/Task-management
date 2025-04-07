@@ -21,9 +21,8 @@ Route::post('/tasks/{task}/delete', [TaskController::class, 'destroy'])->name('t
 Route::get('/tasks/pdf', [TaskController::class, 'downloadPDF'])->name('tasks.pdf'); //Create pdf
 
 
-Route::get('/user/create',[UserController,'UserCreate'])->name('user.create');
-
-Routr::get('loginuser',[AuthController,'loginuser'])->name('loginUser');
+Route::get('/loginuser',[UserController::class,'loginUser'])->name('loginUser');
+Route::post('/Store/user',[UserController::class,'StoreUser'])->name('SaveUser');
 
 
 

@@ -74,7 +74,7 @@
 </head>
 <body>
 <h1> User List</h1>
-<a href="{{route('User.create')}}">Create User</a>
+<a href="{{route('loginUser')}}">Create User</a>
     <h1>Task List</h1>
     <a href="{{ route('tasks.create') }}">Create Task</a>
     <div class="task">
